@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <title>DonkeyFood</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/tooplate-main.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <!---->
+  </head>
+  <body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <span>DonkeyFood</span>
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <div class="group">
+                  <svg class="iconn" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                      <path
+                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <input placeholder="Buscar" type="search" class="input" />
+                </div>
+                <li>
+                  <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                  <a href="Donkeyfood.html">Servicios</a>
+                </li>
+                <li>
+                  <a href="index.html#contact-section">Contactanos</a>
+                </li>
+                <li>
+                  <a href="LogIn.html">Iniciar Sesion</a>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <!-- Page Content -->
+    <!-- Single Starts Here -->
+    <div class="single-product" style="padding-top: 8rem">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="product-slider">
+              <div id="slider" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="assets/images/Pizza.jpg" />
+                  </li>
+                  <!-- items mirrored twice, total of 12 -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-content">
+              <h4>Rebanada de Pizza</h4>
+              <h6>$25.00</h6>
+              <p>
+                Proin commodo, diam a ultricies sagittis, erat odio rhoncus
+                metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida
+                nisi, non placerat nibh. Praesent sit amet diam ultrices,
+                commodo turpis id, dignissim leo. Suspendisse mauris massa,
+                porttitor non fermentum vel, ullamcorper scelerisque velit.
+              </p>
+              <span>7 left on stock</span>
+              <form action="" method="get">
+                <label for="quantity">Quantity:</label>
+                <input
+                  name="quantity"
+                  type="number"
+                  class="quantity-text"
+                  id="quantity"
+                  onfocus="if(this.value == '1') { this.value = ''; }"
+                  onBlur="if(this.value == '') { this.value = '1';}"
+                  value="1"
+                />
+                <input type="submit" class="button" value="Order Now!" />
+              </form>
+              <div class="down-content">
+                <div class="categories">
+                  <h6>
+                    Tipo:
+                    <span
+                      ><form action="">
+                        <input
+                          type="radio"
+                          name="radio"
+                          id="ads"
+                        />Hawaiana<br />
+                        <input type="radio" name="radio" id="asd" />Pepperoni
+                      </form></span
+                    >
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Single Page Ends Here -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/flex-slider.js"></script>
+
+    <script language="text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t) {
+        //declaring the array outside of the
+        if (!cleared[t.id]) {
+          // function makes it static and global
+          cleared[t.id] = 1; // you could use true and false, but that's more typing
+          t.value = ""; // with more chance of typos
+          t.style.color = "#fff";
+        }
+      }
+    </script>
+  </body>
+</html>

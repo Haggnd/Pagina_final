@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+	<title>Crear Cuenta</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/templatemo_style.css" rel="stylesheet" type="text/css">	
+</head>
+<body class="templatemo-bg-gray area">
+	<a href="index.html" class="back">
+	<button class="Volver">
+		<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+		<span>Volver</span>
+	  </button>
+	</a>
+	<h1 class="margin-bottom-15">Crear Cuenta</h1>
+	<div class="container">
+		<div id="msg"></div>
+		<!-- Mensajes de Verificación -->
+		<div id="error" class="alert alert-danger ocultar" role="alert">
+			Las Contraseñas no coinciden, vuelve a intentar !
+		</div>
+		<div id="ok" class="alert alert-success ocultar" role="alert">
+			Las Contraseñas coinciden!
+		</div>
+		<!-- Fin Mensajes de Verificación -->
+		<div class="col-md-12">			
+			<form class="form-horizontal templatemo-create-account templatemo-container" role="form" action="#" method="post">
+				<div class="form-inner">
+					<div class="form-group">
+			          <div class="col-md-6">		          	
+			            <label for="first_name" class="control-label">Nombre</label>
+			            <input type="text" class="form-control" id="nombre" placeholder="" required>		            		            		            
+			          </div>
+					  <div class="col-md-6">		          	
+			            <label for="first_name" class="control-label">Boleta</label>
+			            <input type="number" class="form-control" id="boleta" placeholder="" required>		            		            		            
+			          </div>      
+			        </div>
+					<div class="form-group">
+						<div class="col-md-6">		          	
+							<label for="last_name" class="control-label">Apellido Paterno</label>
+							<input type="text" class="form-control" id="a_paterno" placeholder="" required>		            		            		            
+						  </div>
+						  <div class="col-md-6">		          	
+							<label for="last_name" class="control-label">Apellido Materno</label>
+							<input type="text" class="form-control" id="a_materno" placeholder="" required>		            		            		            
+						  </div> 
+					</div>
+			        <div class="form-group">
+			          <div class="col-md-12">		          	
+			            <label for="username" class="control-label">Correo Electronico</label>
+			            <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com" required>		            		            		            
+			          </div>              
+			        </div>			
+			        <div class="form-group">
+			          <div class="col-md-12">		          	
+			            <label for="username" class="control-label">Alias</label>
+			            <input type="text" class="form-control" id="username" placeholder="" required>		            		            		            
+			          </div>             
+			        </div>
+			        <div class="form-group">
+			          <div class="col-md-6">
+			            <label for="password" class="control-label">Contraseña</label>
+			            <input type="password" class="form-control" id="password" placeholder="" required>
+			          </div>
+			          <div class="col-md-6">
+			            <label for="password" class="control-label">Confirmar Contraseña</label>
+			            <input type="password" class="form-control" id="password_confirm" placeholder="" required>
+			          </div>
+			        </div>
+			        <div class="form-group">
+			          <div class="col-md-12">
+			            <label><input type="checkbox" required>Estoy de acuerdo con los <a href="javascript:;" data-toggle="modal" data-target="#templatemo_modal">Terminos de Servicio</a></label>
+			          </div>
+			        </div>
+			        <div class="form-group">
+			          <div class="col-md-12">
+			            <input type="submit" value="Crear Cuenta" class="btn btn-info" id="crear">
+			            <a href="login-1.html" class="pull-right">Iniciar Sesion</a>
+			          </div>
+			        </div>	
+				</div>				    	
+		      </form>	      
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="templatemo_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Terminos del Servicio</h4>
+	      </div>
+	      <div class="modal-body">
+			  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, in quia dicta, culpa et voluptatum tempora, quasi cumque ullam ad mollitia a. Mollitia accusamus neque maxime, itaque fuga nihil est?</p>
+			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, consequatur. Veritatis repellat culpa corrupti ipsa labore, provident natus numquam suscipit, enim quo consequuntur consectetur sapiente animi eveniet laboriosam eum id?</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+	function verificarPasswords() {
+ 
+		// Ontenemos los valores de los campos de contraseñas 
+		pass1 = document.getElementById('password');
+		pass2 = document.getElementById('password_confirm');
+	 
+		// Verificamos si las constraseñas no coinciden 
+		if (pass1.value != pass2.value) {
+	 
+			// Si las constraseñas no coinciden mostramos un mensaje 
+			document.getElementById("error").classList.add("mostrar");
+	 
+			return false;
+		} else {
+	 
+			// Si las contraseñas coinciden ocultamos el mensaje de error
+			document.getElementById("error").classList.remove("mostrar");
+	 
+			// Mostramos un mensaje mencionando que las Contraseñas coinciden 
+			document.getElementById("ok").classList.remove("ocultar");
+	 
+			// Desabilitamos el botón de crear 
+			document.getElementById("crear").disabled = true;
+	 
+	 
+			return true;
+		}
+	 
+	}</script>
+		<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+		</ul>
+</body>
+</html>
